@@ -28,7 +28,7 @@ jobs:
     - name: Installing Surge
       run: npm install --global surge
     - name: Deploying on surge
-      run: surge ./assignment_1 owaisibootcamp2020.surge.sh --token ${{ secrets.SERGE_TOKEN}}
+      run: surge ./assignment_1 owaisi_assignment1.surge.sh --token ${{ secrets.SERGE_TOKEN}}
        
 
     # Runs a set of commands using the runners shell
