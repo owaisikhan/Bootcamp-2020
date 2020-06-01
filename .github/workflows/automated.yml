@@ -25,9 +25,9 @@ jobs:
       uses: actions/setup-node@v2-beta
       with:
         node-version: 12
-    -name: Installing Surge
-     run: npm install --global surge
-     -name: Deploying on surge
+    - name: Installing Surge
+      run: npm install --global surge
+    - name: Deploying on surge
       run: surge ./ owaisibootcamp2020.surge.sh --token ${{ secrets.SERGE_TOKEN}}
        
 
