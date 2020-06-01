@@ -29,10 +29,3 @@ jobs:
       run: npm install --global surge
     - name: Deploying on surge
       run: surge ./assignment_1 owaisi_assignment1.surge.sh --token ${{ secrets.SERGE_TOKEN}}
-       
-
-    # Runs a set of commands using the runners shell
-    - name: Run a multi-line script
-      run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
